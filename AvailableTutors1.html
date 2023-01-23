@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel = "stylesheet" href="website1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+	font-family: white;
+}
+</style>
+<style type = "text/css">
+div
+{
+width: 600px;
+padding: 10px;
+margin: auto;
+background: green;
+border: 10px solid #999;
+text-align: center;
+background-color: white;
+display: none;
+
+
+}
+</style>
+<script type = "text/javascript">
+
+$(document).ready(function(){
+ $("#slideupBtn").click(function () {
+  $("#slideDiv").slideUp();
+  });
+  
+  $("#slidedownBtn").click(function () {
+  $("#slideDiv").slideDown();
+  });
+
+  
+  
+   $("#toggleBtn").click(function () {
+  $("#slideToggleDiv").slideToggle();
+  });
+  
+});
+</script>
+</head>
+<body>
+	<center><header>
+       <h2>Tutor Availability</h2>
+	 <h1>Schedular</h1>
+	</header></center>
+	<nav>
+		<ul>
+			<a href = "website1.html"><li>Home</li></a>
+			<a href = "AvailableTutors1.html"><li>Tutor Courses</li></a>
+	                <a href = "Appointment1.html"><li>Schedule an Appointment</li></a>
+			<a href = "TutorSchedule1.html"><li>Tutor Schedule</li></a>
+			<a href = "Tutors1.html"><li>List of Tutors</li></a>
+			<a href = "Lessons1.html"><li>Lessons Learned</li></a>
+		</ul>
+			
+	 </nav>
+	     
+	  <center><h1>Tutor Courses</h1></center>
+	  <div id = "slideDiv">
+	 <table style="width:75%">
+  <tr>
+    <th>Course Tutoring:</th>
+    <th>COSC 112</th> 
+    <th>COSC 113</th>
+    <th>COSC 214</th>
+  </tr>
+  <tr>
+    <td>Franklin Igwebuike</td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Marcus Jordan</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td>Harry Laurenceau</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+  	<td>Nathan Nti</td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+  </tr>
+  <tr>
+  	 <td>LeVar Reaves</td>
+     <td>x</td>
+     <td>x</td>
+     <td></td>
+  </tr>
+  <tr>
+  	<td>Douglas Speaks</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+  	<td>Ibukun Ayo-Durojaiye</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+   <tr>
+  	<td>Tenisha Thomas</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+     
+</table>
+</div>
+<br>
+<center><button id = "slideupBtn"> Slide Up</button></center>
+<br>
+<center><button id = "slidedownBtn">Slide Down</button></center>
+
+
+
+	
+
+	
+</body>
+</html>

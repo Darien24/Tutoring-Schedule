@@ -1,0 +1,55 @@
+<catalog>
+<tutor>
+<name>Harry Laurenceau</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+<class3>COSC 214</class3>
+</classes>
+</tutor>
+<tutor>
+<name>Franklin Igwebuike</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+</classes>
+</tutor>
+<tutor>
+<name>LeVar Reaves</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+</classes>
+</tutor>
+<tutor>
+<name>Tenisha Thomas</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+<class3>COSC 214</class3>
+</classes>
+</tutor>
+<tutor>
+<name>Marcus Jordan</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+<class3>COSC 214</class3>
+</classes>
+</tutor>
+<tutor>
+<name>Nathan Nti</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+</classes>
+</tutor>
+<tutor>
+<name>Ibikun Ayo-Durojaye</name>
+<classes>
+<class1>COSC 112</class1>
+<class2>COSC 113</class2>
+<class3>COSC 214</class3>
+</classes>
+</tutor>
+</catalog>

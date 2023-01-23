@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel = "stylesheet" href="website1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+});
+</script>
+<style>
+#div1
+{
+display: none;
+}
+#div2
+{
+display: none;
+}
+#div3
+{
+display: none;
+}
+</style>
+</head>
+<body>
+	<center><header>
+	<h2>Tutor Availability</h2>
+	<h1>Schedular</h1>
+	</header></center>
+	<nav>
+		<ul>
+		       <a href = "website1.html"><li>Home</li></a>
+			<a href = "AvailableTutors1.html"><li>Tutor Courses</li></a>
+	               <a href = "Appointment1.html"><li>Schedule an Appointment</li></a>
+			<a href = "TutorSchedule1.html"><li>Tutor Schedule</li></a>
+			<a href = "Tutors1.html"><li>List of Tutors</li></a>
+			<a href = "Lessons1.html"><li>Lessons Learned</li></a>
+			
+		</ul>
+			
+	 </nav>
+	 
+	
+	 <center><h2>Lessons Learned</h2></center>
+	 <center><button>Click to fade in/out</button><br><br></center>
+	 <div id = "div1">
+	<b><p>Lessons Learned:</p></b>
+
+<b><p>What we have learned creating the tutoring website was adding a more consistent interface to the website as we were still finishing up the website as a whole. Our main goal for the website was to provide the student a way for him to select an appointment of any tutor and be able to have a designated time when trying to reach out to one of the computer science tutors. One thing that went right with the website was the information being displayed for the user to see what computer science classes entailed. The next thing that we want to improve on in this specific type of project is maybe using more options and adding a little more detail maybe to the schedules for the user. </p></b>
+	 </div>
+	 <div id = "div2">
+	 <b><p>Proposal:</p></b>
+
+   <b><p> The real world that we want to accomplish is that we want to give students the accessibility online to obtain a tutor when they need help with a specific subject such as Computer Science. The customer/target audience that we are trying to gain is mostly with college students because they are the ones that need help when they are not having very much success in class. The type of value that our website will offer will be a interactive experience with the tutoring website as they can schedule any appointment anytime when they need help. Typical interactive tasks that will be provided for the user will be the user will enter their name inside on of the tutoring slots and click a submit saying they are entered in the system. </p></b>
+	 </div>
+	 
+          
+	
+</body>
+</html>

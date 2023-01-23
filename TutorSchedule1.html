@@ -1,0 +1,415 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel = "stylesheet" href="website1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	
+<style>
+.button 
+{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: gold;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active 
+{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+
+</style>
+<style>
+div
+{
+width: 600px;
+padding: 10px;
+margin: auto;
+background: green;
+border: 10px solid #999;
+text-align: center;
+background-color: white;
+display: none;
+
+
+
+}
+</style>
+<script type = "text/javascript">
+
+
+
+$(document).ready(function(){
+ $("#slideupBtn").click(function () {
+  $("#slideDiv").slideUp();
+  });
+  
+  $("#slidedownBtn").click(function () {
+  $("#slideDiv").slideDown();
+  });
+
+  
+  
+   $("#toggleBtn").click(function () {
+  $("#slideToggleDiv").slideToggle();
+  });
+  
+});
+</script>
+</head>
+<body>
+	<center><header>
+       <h2>Tutor Availability</h2>
+	 <h1>Schedular</h1>
+	</header></center>
+	<nav>
+		<ul>
+			<a href = "website1.html"><li>Home</li></a>
+			<a href = "AvailableTutors1.html"><li>Tutor Courses</li></a>
+	                <a href = "Appointment1.html"><li>Schedule an Appointment</li></a>
+			<a href = "TutorSchedule1.html"><li>Tutor Schedule</li></a>
+			<a href = "Tutors1.html"><li>List of Tutors</li></a>
+			<a href = "Lessons1.html"><li>Lessons Learned</li></a>
+		</ul>
+			
+	 </nav>
+	     
+	  <center><h1>Tutoring Schedule</h1></center>
+	  <center><h1><button class="button" id="slidedownBtn">Tutoring schedule</button></h1></center>
+	  
+	  
+	  
+	  <div id = "slideDiv">
+	  <center><table>
+  <tr>
+    <th>Start Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th> 
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr>
+    <td>8:00am</td>
+    <td>TT</td>
+    <td>NN</td>
+    <td>TT</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8:30AM</td>
+    <td>TT</td>
+    <td>NN</td>
+    <td>TT</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9:00AM</td>
+       <td>TT</td>
+    <td>NN</td>
+    <td>TT</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9:30AM</td>
+      <td>TT</td>
+    <td>NN</td>
+    <td>TT</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10:00AM</td>
+       <td>DS</td>
+    <td>FI</td>
+    <td>DS</td>
+    <td>FI</td>
+    <td>IA,FI</td>
+    <td>HL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10:30AM</td>
+    <td>DS</td>
+    <td>FI</td>
+    <td>DS</td>
+    <td>FI</td>
+    <td>IA,FI</td>
+    <td>HL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11:00AM</td>
+       <td>NN</td>
+    <td>FI</td>
+    <td>NN</td>
+    <td>FI</td>
+    <td>LR</td>
+    <td>HL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11:30AM</td>
+     <td>NN</td>
+    <td>FI</td>
+    <td>NN</td>
+    <td>FI</td>
+    <td>LR</td>
+    <td>HL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12:00PM</td>
+       <td>NN</td>
+    <td>NN</td>
+    <td></td>
+    <td></td>
+    <td>LR</td>
+    <td>HL</td>
+    <td>HL</td>
+  </tr>
+  <tr>
+    <td>12:30PM</td>
+      <td>NN</td>
+    <td></td>
+    <td>NN</td>
+    <td></td>
+    <td>LR</td>
+    <td>HL</td>
+    <td>HL</td>
+  </tr>
+  <tr>
+    <td>1:00PM</td>
+       <td></td>
+    <td>TT</td>
+    <td></td>
+    <td>LR</td>
+    <td>LR</td>
+    <td>MJ</td>
+    <td>HL</td>
+  </tr>
+  <tr>
+    <td>1:30PM</td>
+     <td></td>
+    <td>TT</td>
+    <td>DS</td>
+    <td>LR</td>
+    <td>LR</td>
+    <td>MJ</td>
+    <td>HL</td>
+  </tr>
+  <tr>
+    <td>2:00PM</td>
+    <td></td>
+    <td>LR</td>
+    <td>DS</td>
+    <td>LR</td>
+    <td>DS</td>
+    <td>MJ</td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>2:30PM</td>
+       <td></td>
+    <td>LR</td>
+    <td>DS</td>
+    <td>LR</td>
+    <td>DS</td>
+    <td>MJ</td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>3:00PM</td>
+     <td></td>
+    <td>TT</td>
+    <td></td>
+    <td>DS</td>
+    <td>DS</td>
+    <td>MJ</td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>3:30PM</td>
+     <td></td>
+    <td>TT</td>
+    <td></td>
+    <td>DS</td>
+    <td>DS</td>
+    <td>MJ</td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>4:00PM</td>
+       <td>DS</td>
+    <td>TT</td>
+    <td></td>
+    <td>DS</td>
+    <td>DS</td>
+    <td></td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>4:30PM</td>
+      <td>DS</td>
+    <td>TT</td>
+    <td></td>
+    <td>DS</td>
+    <td>DS</td>
+    <td></td>
+    <td>MJ</td>
+  </tr>
+  <tr>
+    <td>5:00PM</td>
+   <td>LR</td>
+    <td>IA</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5:30PM</td>
+      <td>LR</td>
+    <td>IA</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6:00PM</td>
+      <td>LR</td>
+    <td>IA</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6:30PM</td>
+    <td>LR</td>
+    <td>IA</td>
+    <td>TT</td>
+    <td>IA,FI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7:00PM</td>
+      <td>MJ</td>
+    <td>IA,FI</td>
+    <td>TT</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td>7:30PM</td>
+      <td>MJ</td>
+    <td>IA,FI</td>
+    <td>MJ</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8:00PM</td>
+       <td>LR</td>
+    <td>IA,FI</td>
+    <td>MJ</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8:30PM</td>
+       <td>LR</td>
+    <td>IA,FI</td>
+    <td>MJ</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9:00PM</td>
+      <td>LR</td>
+    <td>IA,FI</td>
+    <td>MJ</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9:30PM</td>
+      <td>LR</td>
+    <td>IA,FI</td>
+    <td>MJ</td>
+    <td>HL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</center>
+ <center><h1><button class="button" id="slideupBtn">Tutoring schedule</button></h1></center>
+</div>
+
+<br>
+
+<br>
+
+
+
+	
+
+	
+</body>
+</html>

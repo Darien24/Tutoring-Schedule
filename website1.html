@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head>
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel = "stylesheet" href="website1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+});
+</script>
+<style>
+#div1
+{
+display: none;
+}
+#div2
+{
+display: none;
+}
+#div3
+{
+display: none;
+}
+</style>
+</head>
+<body>
+	<center><header>
+       <h2>Tutor Availability</h2>
+	 <h1>Schedular</h1>
+	</header></center>
+	<nav>
+		<ul>
+			<a href = "website1.html"><li>Home</li></a>
+			<a href = "AvailableTutors1.html"><li>Tutor Courses</li></a>
+	        <a href = "Appointment1.html"><li>Schedule an Appointment</li></a>
+			<a href = "TutorSchedule1.html"><li>Tutor Schedule</li></a>
+			<a href = "Tutors1.html"><li>List of Tutors</li></a>
+			<a href = "Lessons1.html"><li>Lessons Learned</li></a>
+		</ul>
+			
+	 </nav>
+	 
+	
+	 <center><h2>Course Information</h2></center>
+	 <center><button>Click to fade in/out</button><br><br></center>
+	 <div id = "div1">
+	<b><p>COSC 112                  Computer Science I (Fall, Spring)                                        4 Credits</p></b>
+
+<b><p>Prerequisite: None. (Students without programming experience may be advised to take COSC 111 before or concurrently with COSC 112.) This course is a study of the formal syntax and semantics of a programming language.  Topics include expressions, assignments, declarations, control structures, arrays, data abstractions, subprograms, user interfaces, error handling, end of file handling, and string handling.  Aspects of Software Engineering include top down design, structured programming, and style in programming conducted in a block structured language, such as Pascal, C, or C++.  Ethical and social issues include information privacy, data reliability, data security, including wiretapping and encryption and ergonomics.  This course may be used to satisfy the General Education Requirement in the Technology category.</p></b>
+	 </div>
+	 <div id = "div2">
+	 <b><p>COSC 113                  Computer Science II (Fall, Spring)                      4 Credits</p></b>
+
+<b><p>Prerequisite: COSC 112. Prerequisite or taken concurrently: MATH 141 or MATH 150. This course explores the design and analysis of large scale systems of programs.  Topics include testing, debugging, documentation, recursion, dynamic storage allocation, LIFO stacks, FIFO queues, trees, linked lists, routed I/O to multiple files, protecting software and other intellectual property, computer crimes, and constitutional and related issues.  This course may be used to satisfy the General Education Requirement in the Technology category.</p></b>
+	 </div>
+	 <div id = "div3">
+      <b><p>COSC 214                  Data Struct & Algorithms (Fall, Spring)      4 Credits</p></b>
+
+<b><p>Prerequisite: COSC 113 or COSC 190.  This course explores the definitions and implementations of basic data structures such as stacks, queues, linked lists, binary trees, etc.; internal searching and sorting algorithms; and garbage collection algorithms.  Design of sort and search algorithms and introductory analysis associated with the basic data structures, as well as recursive algorithms, are discussed.</p></b>
+	 </div>
+	 
+
+	
+          
+	
+</body>
+</html>

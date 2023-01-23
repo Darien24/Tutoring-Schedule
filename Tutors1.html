@@ -1,0 +1,159 @@
+<html>
+<head>
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0">
+	<meta charset="UTF-8">
+	<title>Navigation</title>
+	<link rel = "stylesheet" href="website1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+#div1
+{
+display: none;
+}
+#div2
+{
+display: none;
+}
+#div3
+{
+display: none;
+}
+</style>
+
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+<center><header>
+       <h2>Tutor Availability</h2>
+	 <h1>Schedular</h1>
+	</header></center>
+	<nav>
+		<ul>
+			<a href = "website1.html"><li>Home</li></a>
+			<a href = "AvailableTutors1.html"><li>Tutor Courses</li></a>
+	        <a href = "Appointment1.html"><li>Schedule an Appointment</li></a>
+			<a href = "TutorSchedule1.html"><li>Tutor Schedule</li></a>
+			<a href = "Tutors1.html"><li>List of Tutors</li></a>
+			<a href = "Lessons1.html"><li>Lessons Learned</li></a>
+		</ul>
+			
+	 </nav>
+	 
+
+<center><h1>Tutoring List</h1></center>
+
+<center><button type="button" onclick="loadDoc()">Get the list of tutors</button>
+<br><br>
+<table id="tutor"></table>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "Tutors1.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Tutor</th><th>Class Tutored</th></tr>";
+  var x = xmlDoc.getElementsByTagName("tutor");
+  for (i = 0; i < 1; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue +"<br>"+
+    x[i].getElementsByTagName("class3")[0].childNodes[0].nodeValue +
+	"</td></tr>";
+	
+  }
+  for (i = 1; i < 2; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue +
+
+	"</td></tr>";
+	
+  }
+  for (i = 2; i < 3; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue +
+
+	"</td></tr>";
+	
+  }
+  for (i = 3; i < 4; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue + "<br>" +
+    x[i].getElementsByTagName("class3")[0].childNodes[0].nodeValue +
+
+	"</td></tr>";
+	
+  }
+  for (i = 4; i < 5; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue + "<br>" +
+    x[i].getElementsByTagName("class3")[0].childNodes[0].nodeValue +
+
+	"</td></tr>";
+	
+  }
+   for (i = 5; i < 6; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue + 
+    
+
+	"</td></tr>";
+	
+  }
+  for (i = 6; i < 7; i++)
+   {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("class1")[0].childNodes[0].nodeValue + "<br>"+
+    x[i].getElementsByTagName("class2")[0].childNodes[0].nodeValue + 
+    
+
+	"</td></tr>";
+	
+  }
+  document.getElementById("tutor").innerHTML = table;
+}
+</script>
+</body>
+</html>
+
